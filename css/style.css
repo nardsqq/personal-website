@@ -82,3 +82,18 @@ main {
     margin-top: 16px;
     margin-right: 44px;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer > .wip-banner {
+    bottom: 0;
+    position: fixed;
+    color: #888991;
+    text-align: center;
+    padding: 16px;
+    font-size: 12px;
+    font-style: italic;
+}
