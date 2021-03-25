@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    background-color: #29313D;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    flex-direction: column;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1600px;
+    margin: 64px 0px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu > li {
+    display: inline-block;
+    padding: 36px;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: #888991;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+}
+
+.menu > li > a:hover {
+    color: #F6C15C;
+    transition-delay: 150ms;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.introduction {
+    flex-direction: column;
+}
+
+.introduction > h5 {
+    color: #F6C15C;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    font-size: 16px;
+}
+
+.introduction > h1 {
+    color: #EAEBED;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    width: 580px;
+    line-height: 44px;
+}
+
+.vertical-line {
+    border-left: 4px solid #F6C15C;
+    height: 116px;
+    position: absolute;
+}
+
+.introduction > .content > p {
+    width: 660px;
+    color: #888991;
+    letter-spacing: 0.08em;
+    margin-left: 24px;
+}
+
+.ellipse-block {
+    margin-top: 16px;
+    margin-right: 44px;
+}
