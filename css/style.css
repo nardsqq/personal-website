@@ -45,3 +45,14 @@ header > .flex {
     color: var(--primary-content-color);
     transition-delay: 150ms;
 }
+
+/* Mobile - Portrait and Landscape */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+      .container > nav > ul {
+          display: none;
+      }
+}
