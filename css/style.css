@@ -28,15 +28,6 @@ header > .flex {
     align-items: center;
 }
 
-.container > #logo {
-    flex-basis: 80%;
-}
-
-
-.container > nav {
-    flex-basis: 20%;
-}
-
 .container > nav > ul {
     display: flex;
     list-style-type: none;
