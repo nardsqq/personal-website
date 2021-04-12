@@ -74,7 +74,7 @@ main {
 
 .vertical-line {
     border-left: 4px solid var(--primary-content-color);
-    height: 116px;
+    height: 124px;
     position: absolute;
 }
 
