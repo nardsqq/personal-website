@@ -1,0 +1,3 @@
+name: HTML Preview
+on: [push]
+uses: pavi2410/html-preview-action@v2
