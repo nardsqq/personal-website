@@ -7,99 +7,52 @@
     --header-content-color: #EAEBED;
 }
 
-html {
-    background-color: var(--main-bg-color);
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    justify-content: center;
-}
-
 body {
-    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--main-bg-color);
 }
 
-.navigation-container {
+header {
+    height: 80px;
+}
+
+header > .container {
+    max-width: 1600px;
+    margin: 80px auto;
+    padding: 0 24px;
+}
+
+header > .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1600px;
-    margin: 64px 0px;
 }
 
-.menu {
-    list-style: none;
+.container > nav > ul {
+    display: flex;
+    list-style-type: none;
 }
 
-.menu > li {
-    display: inline-block;
-    padding: 36px;
-}
-
-.menu > li > a {
-    text-decoration: none;
+.container > nav > ul > li > a {
     color: var(--secondary-content-color);
     font-size: 16px;
     letter-spacing: 0.04em;
+    text-decoration: none;
+    padding: 36px;
 }
 
-.menu > li > a:hover {
+.container > nav > ul > li > a:hover {
     color: var(--primary-content-color);
     transition-delay: 150ms;
 }
 
-main {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 200px;
-}
+/* Mobile - Portrait and Landscape */
 
-.introduction {
-    flex-direction: column;
-}
-
-.introduction > h5 {
-    color: var(--primary-content-color);
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    font-size: 16px;
-}
-
-.introduction > h1 {
-    color: var(--header-content-color);
-    font-weight: bold;
-    letter-spacing: 0.08em;
-    width: 580px;
-    line-height: 44px;
-}
-
-.vertical-line {
-    border-left: 4px solid var(--primary-content-color);
-    height: 124px;
-    position: absolute;
-}
-
-.introduction > .content > p {
-    width: 660px;
-    color: var(--secondary-content-color);
-    letter-spacing: 0.08em;
-    margin-left: 24px;
-}
-
-.ellipse-block {
-    margin-top: 16px;
-    margin-right: 44px;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-}
-
-footer > .wip-banner {
-    bottom: 0;
-    position: fixed;
-    color: var(--secondary-content-color);
-    text-align: center;
-    padding: 16px;
-    font-size: 12px;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+      .container > nav > ul {
+          display: none;
+      }
 }
