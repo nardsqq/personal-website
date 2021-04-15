@@ -5,9 +5,9 @@ jobs:
   lighthouse-check:
     runs-on: ubuntu-latest
   steps:
-  - uses: actions/checkout@master
-  - name: Run Lighthouse
-    uses: foo-software/lighthouse-check-action@v3.0.0
-    id: lighthouseCheck
-    with:
-      urls: 'https://nardsparagas.com/'
+    - uses: actions/checkout@master
+    - name: Run Lighthouse
+      uses: foo-software/lighthouse-check-action@v3.0.0
+      id: lighthouseCheck
+      with:
+        urls: 'https://nardsparagas.com/'
