@@ -1,3 +1,5 @@
+/* Body, imports and utility classes */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
@@ -5,6 +7,9 @@
     --primary-content-color: #F6C15C;
     --secondary-content-color: #999999;
     --header-content-color: #EAEBED;
+
+    --content-spacing: 0.08em;
+    --medium: 600;
 }
 
 body {
@@ -12,28 +17,43 @@ body {
     background-color: var(--main-bg-color);
 }
 
-header {
-    height: 80px;
+section {
+    margin: 240px auto;
 }
 
-header > .container {
+.container {
     max-width: 1600px;
     margin: 80px auto;
     padding: 0 24px;
 }
 
-header > .flex {
+.flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.container > nav > ul {
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 416px;
+}
+
+/* Header and Navigation */
+
+header {
+    height: 80px;
+}
+
+nav > ul {
     display: flex;
     list-style-type: none;
 }
 
-.container > nav > ul > li > a {
+nav > ul > li > a {
     color: var(--secondary-content-color);
     font-size: 16px;
     letter-spacing: 0.04em;
@@ -41,9 +61,53 @@ header > .flex {
     padding: 36px;
 }
 
-.container > nav > ul > li > a:hover {
+nav > ul > li > a:hover {
     color: var(--primary-content-color);
     transition-delay: 150ms;
+}
+
+/* Introductory Content */
+
+.description > h1, h3 {
+    letter-spacing: var(--content-spacing);
+}
+
+.description > h1 {
+    color: var(--header-content-color);
+}
+
+.description > h3 {
+    color: var(--primary-content-color);
+    font-weight: var(--medium);
+}
+
+.description > .-text {
+    color: var(--secondary-content-color);
+}
+
+/* --- Media Queries --- */
+
+/* Tablet - Portrait and Landscape */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+        section {
+            margin: 120px auto;
+        }
+
+        .grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 124px;
+        }
+
+        .grid > .illustration {
+            position: relative;
+            justify-self: center;
+            align-self: center;
+        }
 }
 
 /* Mobile - Portrait and Landscape */
@@ -51,8 +115,22 @@ header > .flex {
 @media only screen 
     and (min-device-width: 320px) 
     and (max-device-width: 667px) 
-    and (-webkit-min-device-pixel-ratio: 2) { 
+    and (-webkit-min-device-pixel-ratio: 2) {
+        section {
+            margin: 64px auto;
+        }
+
         .container > nav > ul {
+            display: none;
+        }
+
+        .grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 64px;
+        }
+
+        .grid > .illustration {
             display: none;
         }
 }
