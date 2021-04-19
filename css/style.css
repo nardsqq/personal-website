@@ -84,20 +84,20 @@ header {
     height: 80px;
 }
 
-nav > ul {
+.navigation > .-list {
     display: flex;
     list-style-type: none;
 }
 
-nav > ul > li > a {
+.navigation > .-list > .-item > .-link {
     color: var(--header-navigation-color);
     font-size: 16px;
     letter-spacing: 0.04em;
     text-decoration: none;
-    padding: 36px;
+    margin-left: 96px;
 }
 
-nav > ul > li > a:hover {
+.navigation > .-list > .-item > .-link:hover {
     color: var(--primary-content-color);
     transition-delay: 150ms;
 }
@@ -162,6 +162,40 @@ nav > ul > li > a:hover {
     line-height: 1.4em;
 }
 
+.footer {
+    border: 1px var(--primary-content-color) solid;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-note {
+    color: var(--primary-content-color);
+    font-size: 16px;
+}
+
+.footer-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-list > .footer-item > .footer-link {
+    color: var(--primary-content-color);
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    margin-left: 96px;
+}
+
+.footer-list > .footer-item > .footer-link:hover {
+    color: var(--secondary-content-color);
+}
+
 /* Animations and Transitions */
 
 @keyframes transitionIn {
@@ -184,7 +218,7 @@ nav > ul > li > a:hover {
     and (min-device-width: 320px) 
     and (max-device-width: 667px) 
     and (-webkit-min-device-pixel-ratio: 2) {
-        .container > nav > ul {
+        .navigation > .-list {
             display: none;
         }
 
@@ -198,5 +232,13 @@ nav > ul > li > a:hover {
 
         .quote {
             font-size: 16px;
+        }
+
+        .footer-list {
+            display: none;
+        }
+
+        .footer {
+            margin: 24px;
         }
 }
