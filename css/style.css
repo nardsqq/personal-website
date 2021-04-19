@@ -3,10 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --main-bg-color: #29313D;
-    --primary-content-color: #F6C15C;
-    --secondary-content-color: #999999;
+    --main-bg-color: #FFFFFF;
+    --primary-content-color: #4A5BBE;
+    --secondary-content-color: #333C66;
     --header-content-color: #EAEBED;
+    --header-navigation-color: #888991;
 
     --content-spacing: 0.08em;
     --medium: 600;
@@ -22,7 +23,7 @@ section {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 960px;
     margin: 80px auto;
     padding: 0 24px;
 }
@@ -54,7 +55,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
-    color: var(--secondary-content-color);
+    color: var(--header-navigation-color);
     font-size: 16px;
     letter-spacing: 0.04em;
     text-decoration: none;
