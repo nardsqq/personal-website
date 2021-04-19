@@ -159,6 +159,7 @@ nav > ul > li > a:hover {
     color: var(--secondary-content-color);
     padding-left: 32px;
     border-left: 4px var(--primary-content-color) solid;
+    line-height: 1.4em;
 }
 
 /* Animations and Transitions */
