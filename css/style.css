@@ -44,6 +44,11 @@ section {
     animation: transitionIn 0.75s;
 }
 
+.details {
+    font-size: 24px;
+    color: var(--secondary-content-color);
+}
+
 /* Header and Navigation */
 
 header {
@@ -96,7 +101,7 @@ nav > ul > li > a:hover {
     position: relative;
 }
 
-.heading > h1, h5 {
+.heading-margins > h1, h5 {
     margin: 8px 0;
 }
 
