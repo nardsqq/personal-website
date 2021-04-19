@@ -6,7 +6,7 @@
     --main-bg-color: #FFFFFF;
     --primary-content-color: #4A5BBE;
     --secondary-content-color: #333C66;
-    --header-content-color: #EAEBED;
+    --support-content-color: #BFC6DD;
     --header-navigation-color: #888991;
 
     --content-spacing: 0.08em;
@@ -43,6 +43,23 @@ section {
     gap: 416px;
 }
 
+.main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary-content-color);
+}
+
+.secondary-heading {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--secondary-content-color);
+}
+
+.support-heading {
+    font-size: 16px;
+    color: var(--support-content-color);
+}
+
 /* Header and Navigation */
 
 header {
@@ -69,21 +86,18 @@ nav > ul > li > a:hover {
 
 /* Introductory Content */
 
-.description > h1, h3 {
-    letter-spacing: var(--content-spacing);
+.description {
+    border: 1px var(--primary-content-color) solid;
+    border-radius: 10px;
+    padding: 72px;
 }
 
-.description > h1 {
-    color: var(--header-content-color);
+.description > h1, h5 {
+    margin: 8px 0;
 }
 
-.description > h3 {
-    color: var(--primary-content-color);
-    font-weight: var(--medium);
-}
-
-.description > .-text {
-    color: var(--secondary-content-color);
+.description > .secondary-heading {
+    max-width: 600px;
 }
 
 /* --- Media Queries --- */
