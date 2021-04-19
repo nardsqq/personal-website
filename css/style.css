@@ -8,7 +8,9 @@
     --secondary-content-color: #333C66;
     --support-content-color: #BFC6DD;
     --header-navigation-color: #888991;
+    --experience-content-color: #666D8C;
 
+    --regular: 400;
     --medium: 600;
     --bold: 700;
     --extra-bold: 800;
@@ -47,6 +49,33 @@ section {
 .details {
     font-size: 24px;
     color: var(--secondary-content-color);
+}
+
+.technologies-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 64px;
+}
+
+.technology {
+    font-weight: var(--medium);
+    font-size: 24px;
+    margin: 16px;
+}
+
+.technology-label {
+    color: var(--secondary-content-color);
+}
+
+.technology-experience {
+    color: var(--experience-content-color);
+}
+
+.technology-experience::before {
+    content: "\2022";
+    margin: 0 .5rem;
+    font-weight: var(--regular);
+    color: var(--support-content-color);
 }
 
 /* Header and Navigation */
