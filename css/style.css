@@ -31,34 +31,13 @@ section {
 
 .flex {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-    gap: 416px;
 }
 
-.main-heading {
-    font-size: 48px;
-    font-weight: var(--bold);
-    color: var(--primary-content-color);
-}
-
-.secondary-heading {
-    font-size: 48px;
-    font-weight: var(--extra-bold);
-    color: var(--secondary-content-color);
-}
-
-.support-heading {
-    font-size: 16px;
-    color: var(--support-content-color);
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Header and Navigation */
@@ -83,6 +62,25 @@ nav > ul > li > a {
 nav > ul > li > a:hover {
     color: var(--primary-content-color);
     transition-delay: 150ms;
+}
+
+/* Headings and Titles */
+
+.main-heading {
+    font-size: 48px;
+    font-weight: var(--bold);
+    color: var(--primary-content-color);
+}
+
+.secondary-heading {
+    font-size: 48px;
+    font-weight: var(--extra-bold);
+    color: var(--secondary-content-color);
+}
+
+.support-heading {
+    font-size: 16px;
+    color: var(--support-content-color);
 }
 
 /* Introductory Content */
@@ -119,15 +117,6 @@ nav > ul > li > a:hover {
 }
 
 /* --- Media Queries --- */
-
-/* Laptops - Non-Retina Screens */
-
-@media only screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-
-}
 
 /* Tablet - Portrait and Landscape */
 
