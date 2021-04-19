@@ -20,7 +20,7 @@ body {
 }
 
 section {
-    margin: 124px auto;
+    margin-bottom: 124px;
 }
 
 .container {
@@ -85,18 +85,18 @@ nav > ul > li > a:hover {
 
 /* Introductory Content */
 
-.description {
+.heading {
     border: 1px var(--primary-content-color) solid;
     border-radius: 10px;
     padding: 72px;
     position: relative;
 }
 
-.description > h1, h5 {
+.heading > h1, h5 {
     margin: 8px 0;
 }
 
-.description > .secondary-heading {
+.heading > .secondary-heading {
     max-width: 600px;
 }
 
@@ -114,6 +114,13 @@ nav > ul > li > a:hover {
 .connect-button:hover {
     background-color: var(--secondary-content-color);
     box-shadow: 5px 10px var(--header-navigation-color);
+}
+
+.introductory-quote {
+    font-size: 24px;
+    color: var(--secondary-content-color);
+    padding-left: 32px;
+    border-left: 4px var(--primary-content-color) solid;
 }
 
 /* --- Media Queries --- */
