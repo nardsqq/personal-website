@@ -131,9 +131,7 @@ nav > ul > li > a:hover {
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-        section {
-            margin: 120px auto;
-        }
+
 }
 
 /* Mobile - Portrait and Landscape */
@@ -142,11 +140,19 @@ nav > ul > li > a:hover {
     and (min-device-width: 320px) 
     and (max-device-width: 667px) 
     and (-webkit-min-device-pixel-ratio: 2) {
-        section {
-            margin: 64px auto;
-        }
-
         .container > nav > ul {
             display: none;
+        }
+
+        .heading > .main-heading, .secondary-heading {
+            font-size: 36px;
+        }
+
+        .heading > .support-heading {
+            font-size: 14px;
+        }
+
+        .introductory-quote {
+            font-size: 16px;
         }
 }
