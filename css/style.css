@@ -40,6 +40,10 @@ section {
     justify-content: space-between;
 }
 
+.transition-in {
+    animation: transitionIn 0.75s;
+}
+
 /* Header and Navigation */
 
 header {
@@ -122,6 +126,20 @@ nav > ul > li > a:hover {
     color: var(--secondary-content-color);
     padding-left: 32px;
     border-left: 4px var(--primary-content-color) solid;
+}
+
+/* Animations and Transitions */
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* --- Media Queries --- */
