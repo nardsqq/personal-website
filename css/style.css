@@ -101,7 +101,36 @@ nav > ul > li > a:hover {
     max-width: 600px;
 }
 
+.connect-button {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: var(--bold);
+    padding: 1.1rem 2rem;
+    border-radius: 10px;
+    background-color: var(--primary-content-color);
+    position: absolute;
+    top: 616px;
+    left: 548px;
+}
+
+.connect-button:hover {
+    background-color: var(--secondary-content-color);
+    box-shadow: 5px 10px var(--header-navigation-color);
+}
+
 /* --- Media Queries --- */
+
+/* Laptops - Non-Retina Screens */
+
+@media only screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+        .connect-button {
+            top: 616px;
+            left: 308px;
+        }
+}
 
 /* Tablet - Portrait and Landscape */
 
@@ -113,16 +142,9 @@ nav > ul > li > a:hover {
             margin: 120px auto;
         }
 
-        .grid {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            gap: 124px;
-        }
-
-        .grid > .illustration {
-            position: relative;
-            justify-self: center;
-            align-self: center;
+        .connect-button {
+            top: 616px;
+            left: 108px;
         }
 }
 
@@ -140,13 +162,7 @@ nav > ul > li > a:hover {
             display: none;
         }
 
-        .grid {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            grid-gap: 64px;
-        }
-
-        .grid > .illustration {
+        .connect-button {
             display: none;
         }
 }
