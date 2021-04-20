@@ -10,6 +10,15 @@
     --header-navigation-color: #888991;
     --experience-content-color: #666D8C;
 
+    --site-width: 960px;
+    --heading-width: 600px;
+    --section-margin: 124px;
+    --header-height: 80px;
+
+    --heading: 48px;
+    --sub-heading: 24px;
+    --primary-content: 16px;
+
     --regular: 400;
     --medium: 600;
     --bold: 700;
@@ -22,11 +31,11 @@ body {
 }
 
 section {
-    margin-bottom: 124px;
+    margin-bottom: var(--section-margin);
 }
 
 .container {
-    max-width: 960px;
+    max-width: var(--site-width);
     margin: 80px auto;
     padding: 0 24px;
 }
@@ -47,41 +56,14 @@ section {
 }
 
 .details {
-    font-size: 24px;
+    font-size: var(--sub-heading);
     color: var(--secondary-content-color);
-}
-
-.technologies-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 64px;
-}
-
-.technology {
-    font-weight: var(--medium);
-    font-size: 24px;
-    margin: 16px;
-}
-
-.technology-label {
-    color: var(--secondary-content-color);
-}
-
-.technology-experience {
-    color: var(--experience-content-color);
-}
-
-.technology-experience::before {
-    content: "\2022";
-    margin: 0 .5rem;
-    font-weight: var(--regular);
-    color: var(--support-content-color);
 }
 
 /* Header and Navigation */
 
 header {
-    height: 80px;
+    height: var(--header-height);
 }
 
 .navigation > .-list {
@@ -91,7 +73,7 @@ header {
 
 .navigation > .-list > .-item > .-link {
     color: var(--header-navigation-color);
-    font-size: 16px;
+    font-size: var(--primary-content);
     letter-spacing: 0.04em;
     text-decoration: none;
     margin-left: 96px;
@@ -105,19 +87,19 @@ header {
 /* Headings and Titles */
 
 .main-heading {
-    font-size: 48px;
+    font-size: var(--heading);
     font-weight: var(--bold);
     color: var(--primary-content-color);
 }
 
 .secondary-heading {
-    font-size: 48px;
+    font-size: var(--heading);
     font-weight: var(--extra-bold);
     color: var(--secondary-content-color);
 }
 
 .support-heading {
-    font-size: 16px;
+    font-size: var(--primary-content);
     color: var(--support-content-color);
 }
 
@@ -135,7 +117,7 @@ header {
 }
 
 .heading > .secondary-heading {
-    max-width: 600px;
+    max-width: var(--heading-width);
 }
 
 .connect-button {
@@ -155,11 +137,40 @@ header {
 }
 
 .quote {
-    font-size: 24px;
+    font-size: var(--sub-heading);
     color: var(--secondary-content-color);
     padding-left: 32px;
     border-left: 4px var(--primary-content-color) solid;
     line-height: 1.4em;
+}
+
+/* Technology Section */
+
+.technologies-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 64px;
+}
+
+.technology {
+    font-weight: var(--medium);
+    font-size: var(--sub-heading);
+    margin: 16px;
+}
+
+.technology-label {
+    color: var(--secondary-content-color);
+}
+
+.technology-experience {
+    color: var(--experience-content-color);
+}
+
+.technology-experience::before {
+    content: "\2022";
+    margin: 0 .5rem;
+    font-weight: var(--regular);
+    color: var(--support-content-color);
 }
 
 /* Footer */
@@ -178,7 +189,7 @@ header {
 
 .footer-note {
     color: var(--primary-content-color);
-    font-size: 16px;
+    font-size: var(--primary-content);
 }
 
 .footer-list {
@@ -188,7 +199,7 @@ header {
 
 .footer-list > .footer-item > .footer-link {
     color: var(--primary-content-color);
-    font-size: 16px;
+    font-size: var(--primary-content);
     letter-spacing: 0.04em;
     text-decoration: none;
     margin-left: 96px;
@@ -247,11 +258,11 @@ header {
         }
 
         .technology {
-            font-size: 16px;
+            font-size: var(--primary-content);
         }
 
         .quote {
-            font-size: 16px;
+            font-size: var(--primary-content);
         }
 
         .footer-list {
