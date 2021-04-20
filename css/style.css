@@ -3,22 +3,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --main-bg-color: #FFFFFF;
-    --primary-content-color: #4A5BBE;
-    --secondary-content-color: #333C66;
-    --support-content-color: #BFC6DD;
-    --header-navigation-color: #888991;
-    --experience-content-color: #666D8C;
+    /* Color Palette */
+    --background-color: #FFFFFF;
+    
+    --brand-primary: #4A5BBE;
+    --brand-secondary: #333C66;
+    --brand-tertiary: #BFC6DD;
 
+    --auxiliary-color-primary: #888991;
+    --auxiliary-color-secondary: #666D8C;
+
+    /* Site-wide */
     --site-width: 960px;
-    --heading-width: 600px;
-    --section-margin: 124px;
     --header-height: 80px;
+    --section-margin: 124px;
+    --section-margin-top-narrow: 64px;
 
+    /* Headings */
     --heading: 48px;
-    --sub-heading: 24px;
-    --primary-content: 16px;
+    --heading-narrow: 24px;
+    --heading-sub-narrow: 14px;
+    --heading-width: 600px;
 
+    /* Website Text and Content */
+    --content-primary: 24px;
+    --content-secondary: 16px;
+
+    /* Font Weights */
     --regular: 400;
     --medium: 600;
     --bold: 700;
@@ -55,11 +66,6 @@ section {
     animation: transitionIn 0.75s;
 }
 
-.details {
-    font-size: var(--sub-heading);
-    color: var(--secondary-content-color);
-}
-
 /* Header and Navigation */
 
 header {
@@ -72,7 +78,7 @@ header {
 }
 
 .navigation > .navigation-list > .navigation-item > .navigation-link {
-    color: var(--header-navigation-color);
+    color: var(--auxiliary-color-primary);
     font-size: var(--primary-content);
     letter-spacing: 0.04em;
     text-decoration: none;
@@ -80,7 +86,7 @@ header {
 }
 
 .navigation > .navigation-list > .navigation-item > .navigation-link:hover {
-    color: var(--primary-content-color);
+    color: var(--brand-primary);
     transition-delay: 150ms;
 }
 
@@ -89,18 +95,18 @@ header {
 .heading-primary {
     font-size: var(--heading);
     font-weight: var(--bold);
-    color: var(--primary-content-color);
+    color: var(--brand-primary);
 }
 
 .heading-secondary {
     font-size: var(--heading);
     font-weight: var(--extra-bold);
-    color: var(--secondary-content-color);
+    color: var(--brand-secondary);
 }
 
 .heading-sub {
     font-size: var(--primary-content);
-    color: var(--support-content-color);
+    color: var(--brand-tertiary);
 }
 
 .heading-margin > h1, h5 {
@@ -110,7 +116,7 @@ header {
 /* Introductory Content */
 
 .hero {
-    border: 1px var(--primary-content-color) solid;
+    border: 1px var(--brand-primary) solid;
     border-radius: 10px;
     padding: 72px;
     position: relative;
@@ -126,21 +132,29 @@ header {
     font-weight: var(--bold);
     padding: 1.1rem 2rem;
     border-radius: 10px;
-    background-color: var(--primary-content-color);
+    background-color: var(--brand-primary);
     position: absolute;
     margin-top: 48px;
 }
 
 .button-primary:hover {
-    background-color: var(--secondary-content-color);
-    box-shadow: 5px 10px var(--header-navigation-color);
+    background-color: var(--brand-secondary);
+    box-shadow: 5px 10px var(--auxiliary-color-primary);
 }
 
 .content-primary {
-    font-size: var(--sub-heading);
-    color: var(--secondary-content-color);
+    font-size: var(--content-primary);
+    color: var(--brand-secondary);
     padding-left: 32px;
-    border-left: 4px var(--primary-content-color) solid;
+    border-left: 4px var(--brand-primary) solid;
+    line-height: 1.4em;
+}
+
+.content-secondary {
+    font-size: var(--content-secondary);
+    color: var(--brand-secondary);
+    padding-left: 32px;
+    border-left: 4px var(--brand-primary) solid;
     line-height: 1.4em;
 }
 
@@ -154,29 +168,29 @@ header {
 
 .technology {
     font-weight: var(--medium);
-    font-size: var(--sub-heading);
+    font-size: var(--content-primary);
     margin: 16px;
 }
 
 .technology-label {
-    color: var(--secondary-content-color);
+    color: var(--brand-secondary);
 }
 
 .technology-experience {
-    color: var(--experience-content-color);
+    color: var(--auxiliary-color-secondary);
 }
 
 .technology-experience::before {
     content: "\2022";
     margin: 0 .5rem;
     font-weight: var(--regular);
-    color: var(--support-content-color);
+    color: var(--brand-tertiary);
 }
 
 /* Footer */
 
 #footer {
-    border: 1px var(--primary-content-color) solid;
+    border: 1px var(--brand-primary) solid;
     border-radius: 10px;
     padding: 24px;
 }
@@ -188,7 +202,7 @@ header {
 }
 
 .footer-note {
-    color: var(--primary-content-color);
+    color: var(--brand-primary);
     font-size: var(--primary-content);
 }
 
@@ -198,7 +212,7 @@ header {
 }
 
 .footer-list > .footer-item > .footer-link {
-    color: var(--primary-content-color);
+    color: var(--brand-primary);
     font-size: var(--primary-content);
     letter-spacing: 0.04em;
     text-decoration: none;
@@ -206,7 +220,7 @@ header {
 }
 
 .footer-list > .footer-item > .footer-link:hover {
-    color: var(--secondary-content-color);
+    color: var(--brand-secondary);
 }
 
 /* Animations and Transitions */
@@ -240,11 +254,11 @@ header {
         }
 
         .heading-margin > .heading-primary, .heading-secondary {
-            font-size: 24px;
+            font-size: var(--heading-narrow);
         }
 
         .heading-margin > .heading-sub {
-            font-size: 14px;
+            font-size: var(--heading-sub-narrow)
         }
 
         .button-primary {
@@ -254,15 +268,15 @@ header {
         .technologies-list {
             display: grid;
             grid-template-columns: 1fr;
-            margin-top: 64px;
+            margin-top: var(--section-margin-top-narrow);
         }
 
         .technology {
-            font-size: var(--primary-content);
+            font-size: var(--content-secondary);
         }
 
         .content-primary {
-            font-size: var(--primary-content);
+            font-size: var(--content-secondary);
         }
 
         .footer-list {
