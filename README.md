@@ -3,8 +3,9 @@
 
 ## My Personal Website
 
-- Written in vanilla HTML and CSS (Flexbox for layout)
+- Written in vanilla HTML and CSS (Flexbox and Grid for Layout)
 - Deployed on Netlify for ease of use and enforcement of SSL.
 - Designed in [Figma](https://www.figma.com/file/vjoGsK0OWI9f0wXbh2qRQU/Personal-Website?node-id=0%3A1)
 
-![Group 2](https://user-images.githubusercontent.com/21337635/114432904-c5092080-9bf3-11eb-8519-242a125897ba.png)
+![screely-1618918283488](https://user-images.githubusercontent.com/21337635/115388919-0fe7f100-a20f-11eb-85d7-0114aa5c3885.png)
+
