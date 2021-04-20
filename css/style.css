@@ -224,12 +224,20 @@ header {
             display: none;
         }
 
+        .heading {
+            padding: 36px;
+        }
+
         .heading-margins > .main-heading, .secondary-heading {
             font-size: 36px;
         }
 
         .heading-margins > .support-heading {
             font-size: 14px;
+        }
+
+        .connect-button {
+            margin-top: 12px;
         }
 
         .technologies-list {
