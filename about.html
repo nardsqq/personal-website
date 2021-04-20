@@ -32,42 +32,40 @@
     </head>
 
     <body>
-        <!-- Header & Navigation -->
-        <header>
-            <div class="container nav-flex">
-                <div id="logo">
-                    <a href="/">
-                        <img src="public/images/logo_v4.png" alt="Personal Website Logo" width="64" height="64">
-                    </a>
-                </div>
-                <nav class="navigation">
-                    <ul class="-list">
-                        <li class="-item">
-                            <a href="about" class="-link">About</a>
-                        </li>
-                        <li class="-item">
-                            <a href="https://blog.nardsparagas.com/" rel="noreferrer noopener" target="_blank" class="-link">Blog</a>
-                        </li>
-                        <li class="-item">
-                            <a href="connect" class="-link">Let's Connect</a>
-                        </li>
-                    </ul>
-                </nav>
+       <!-- Header & Navigation -->
+        <header class="container header-flex">
+            <div id="logo">
+                <a href="/">
+                    <img src="public/images/logo_v4.png" alt="Personal Website Logo" width="64" height="64">
+                </a>
             </div>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a href="about" class="navigation-link">About</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="https://blog.nardsparagas.com/" rel="noreferrer noopener" target="_blank" class="navigation-link">Blog</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="connect" class="navigation-link">Let's Connect</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <!-- Main Content -->
         <main class="container transition-in">
             <!-- Introductory Section -->
-            <section class="introduction">
-                <div class="heading heading-margins">
-                    <h5 class="support-heading">ABOUT ME</h5>
-                    <h1 class="main-heading">Learn about my</h1>
-                    <h1 class="secondary-heading">musings, character, and career.</h1>
+            <section id="hero">
+                <div class="hero heading-margin">
+                    <h5 class="heading-sub">ABOUT ME</h5>
+                    <h1 class="heading-primary">Learn about my</h1>
+                    <h1 class="heading-secondary">musings, character, and career.</h1>
                 </div>
             </section>
-
-            <section class="description">
-                <div class="quote">
+            <!-- About Me Content -->
+            <section id="about">
+                <div class="content-primary">
                     <p>
                         I’m a Manila-based software developer that has a full-stack background and love for good design. I’ve worked with startups since my college internship period and has experienced developing solutions for various business areas such as events management, human resources, online learning, travel insurance, and business finance.
                     </p>
@@ -80,23 +78,23 @@
                     </p>
                 </div>
             </section>
+            <!-- Footer -->
+            <footer class="container" id="footer">
+                <div class="footer-links">
+                    <span class="footer-note">Nards Paragas &mdash; 2021</span>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="about" class="footer-link">About</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="https://blog.nardsparagas.com/" rel="noreferrer noopener" target="_blank" class="footer-link">Blog</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="connect" class="footer-link">Let's Connect</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
         </main>
-         <!-- Footer -->
-         <footer class="container footer">
-            <div class="footer-links">
-                <span class="footer-note">Nards Paragas &mdash; 2021</span>
-                <ul class="footer-list">
-                    <li class="footer-item">
-                        <a href="about" class="footer-link">About</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="https://blog.nardsparagas.com/" rel="noreferrer noopener" target="_blank" class="footer-link">Blog</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="connect" class="footer-link">Let's Connect</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
     </body>
 </html>

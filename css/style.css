@@ -175,7 +175,7 @@ header {
 
 /* Footer */
 
-.footer {
+#footer {
     border: 1px var(--primary-content-color) solid;
     border-radius: 10px;
     padding: 24px;
@@ -240,7 +240,7 @@ header {
         }
 
         .heading-margin > .heading-primary, .heading-secondary {
-            font-size: 36px;
+            font-size: 24px;
         }
 
         .heading-margin > .heading-sub {
