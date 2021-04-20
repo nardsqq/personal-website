@@ -33,57 +33,53 @@
 
     <body>
         <!-- Header & Navigation -->
-        <header>
-            <div class="container nav-flex">
-                <div id="logo">
-                    <a href="/">
-                        <img src="public/images/logo_v4.png" alt="Personal Website Logo" width="64" height="64">
-                    </a>
-                </div>
-                <nav class="navigation">
-                    <ul class="-list">
-                        <li class="-item">
-                            <a href="about" class="-link">About</a>
-                        </li>
-                        <li class="-item">
-                            <a href="https://blog.nardsparagas.com/" rel="noreferrer noopener" target="_blank" class="-link">Blog</a>
-                        </li>
-                        <li class="-item">
-                            <a href="connect" class="-link">Let's Connect</a>
-                        </li>
-                    </ul>
-                </nav>
+        <header class="container header-flex">
+            <div id="logo">
+                <a href="/">
+                    <img src="public/images/logo_v4.png" alt="Personal Website Logo" width="64" height="64">
+                </a>
             </div>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a href="about" class="navigation-link">About</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="https://blog.nardsparagas.com/" rel="noreferrer noopener" target="_blank" class="navigation-link">Blog</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="connect" class="navigation-link">Let's Connect</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <!-- Main Content -->
         <main class="container transition-in">
             <!-- Introductory Section -->
             <section class="introduction">
-                <div class="heading heading-margins">
-                    <h5 class="support-heading">SOFTWARE DEVELOPER</h5>
-                    <h1 class="main-heading">Hi! I'm Nards Paragas</h1>
-                    <h1 class="secondary-heading">I help build and design products for startups.</h1>
-                    <a href="connect" class="connect-button">LET'S CONNECT</a>
+                <div class="hero heading-margin">
+                    <h5 class="heading-sub">SOFTWARE DEVELOPER</h5>
+                    <h1 class="heading-primary">Hi! I'm Nards Paragas</h1>
+                    <h1 class="heading-secondary">I help build and design products for startups.</h1>
+                    <a href="connect" class="button-primary">LET'S CONNECT</a>
                 </div>
             </section>
 
             <section class="description">
-                <div class="quote">
-                    <p>
-                        I’m a software developer and tech startup enthusiast that has a deep desire to build and launch digital products — always striving to maintain a strong growth mindset accompanied by user-centric designs and a problem-solving approach.
-                    </p>
-                    <p>
-                        Throughout my career, I’ve written code to craft experiences and designed on the side to understand the human in these applications.
-                    </p>
-                </div>
+                <p class="content-primary">
+                    I’m a software developer and tech startup enthusiast that has a deep desire to build and launch digital products — always striving to maintain a strong growth mindset accompanied by user-centric designs and a problem-solving approach.
+                </p>
+                <p class="content-primary">
+                    Throughout my career, I’ve written code to craft experiences and designed on the side to understand the human in these applications.
+                </p>
             </section>
 
             <section class="technical-skills">
-                <div class="heading-margins">
-                    <h5 class="support-heading">INDUSTRY KNOWLEDGE</h5>
-                    <h1 class="main-heading">Technical skill set</h1>
+                <div class="heading-margin">
+                    <h5 class="heading-sub">INDUSTRY KNOWLEDGE</h5>
+                    <h1 class="heading-primary">Technical skill set</h1>
                 </div>
-                <p class="quote">
+                <p class="content-primary">
                     During my early years as a developer, I tend to learn things horizontally, picking up bits and pieces of knowledge but at some point in my career I realized that specializing on a single tech or two while keeping myself up to date with the upcoming ones is more efficient.
                 </p>
                 <div class="technologies-list">
@@ -109,23 +105,23 @@
                     </h3>
                 </div>
             </section>
+            <!-- Footer -->
+            <footer class="footer container">
+                <div class="footer-links">
+                    <span class="footer-note">Nards Paragas &mdash; 2021</span>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="about" class="footer-link">About</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="https://blog.nardsparagas.com/" rel="noreferrer noopener" target="_blank" class="footer-link">Blog</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="connect" class="footer-link">Let's Connect</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
         </main>
-        <!-- Footer -->
-        <footer class="container footer">
-            <div class="footer-links">
-                <span class="footer-note">Nards Paragas &mdash; 2021</span>
-                <ul class="footer-list">
-                    <li class="footer-item">
-                        <a href="about" class="footer-link">About</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="https://blog.nardsparagas.com/" rel="noreferrer noopener" target="_blank" class="footer-link">Blog</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="connect" class="footer-link">Let's Connect</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
     </body>
 </html>
