@@ -162,6 +162,8 @@ header {
     line-height: 1.4em;
 }
 
+/* Footer */
+
 .footer {
     border: 1px var(--primary-content-color) solid;
     border-radius: 10px;
@@ -222,12 +224,22 @@ header {
             display: none;
         }
 
-        .heading > .main-heading, .secondary-heading {
+        .heading-margins > .main-heading, .secondary-heading {
             font-size: 36px;
         }
 
-        .heading > .support-heading {
+        .heading-margins > .support-heading {
             font-size: 14px;
+        }
+
+        .technologies-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 64px;
+        }
+
+        .technology {
+            font-size: 16px;
         }
 
         .quote {
