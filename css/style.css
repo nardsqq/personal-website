@@ -66,6 +66,16 @@ section {
     animation: transitionIn 0.75s;
 }
 
+.link {
+    color: var(--brand-primary);
+    text-decoration: none;
+}
+
+.link:hover {
+    border-bottom: 2px var(--brand-secondary) solid;
+    transition-delay: 150ms;
+}
+
 /* Header and Navigation */
 
 header {
@@ -94,6 +104,12 @@ header {
 
 .heading-primary {
     font-size: var(--heading);
+    font-weight: var(--bold);
+    color: var(--brand-primary);
+}
+
+.heading-primary-narrow {
+    font-size: var(--content-primary);
     font-weight: var(--bold);
     color: var(--brand-primary);
 }
