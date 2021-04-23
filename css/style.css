@@ -72,8 +72,7 @@ section {
 }
 
 .link:hover {
-    border-bottom: 2px var(--brand-secondary) solid;
-    transition-delay: 150ms;
+    border-bottom: 2px var(--brand-tertiary) dotted;
 }
 
 /* Header and Navigation */
