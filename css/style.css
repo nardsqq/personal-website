@@ -62,7 +62,7 @@ section {
     justify-content: space-between;
 }
 
-.transition-in {
+.fade-in {
     animation: transitionIn 0.75s;
 }
 
