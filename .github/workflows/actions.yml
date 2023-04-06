@@ -1,4 +1,4 @@
-name: Lighthouse Check
+name: Lighthouse
 on: [push]
 
 jobs: 
@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Run Lighthouse
-        uses: foo-software/lighthouse-check-action@v3.0.0
+      - name: Lighthouse
+        uses: foo-software/lighthouse-check-action@master
         id: lighthouseCheck
         with:
           urls: 'https://nardsparagas.com/'
