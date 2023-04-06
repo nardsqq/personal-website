@@ -6,7 +6,7 @@
     /* Color Palette */
     --background-color: #FFFFFF;
     
-    --brand-primary: #4A5BBE;
+    --brand-primary: #FF8252;
     --brand-secondary: #333C66;
     --brand-tertiary: #BFC6DD;
 
@@ -175,7 +175,7 @@ header {
 
 /* Technology Section */
 
-.technologies-list {
+/* .technologies-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 64px;
@@ -200,7 +200,7 @@ header {
     margin: 0 .5rem;
     font-weight: var(--regular);
     color: var(--brand-tertiary);
-}
+} */
 
 /* Footer */
 
@@ -280,15 +280,15 @@ header {
             margin-top: 12px;
         }
 
-        .technologies-list {
+        /* .technologies-list {
             display: grid;
             grid-template-columns: 1fr;
             margin-top: var(--section-margin-top-narrow);
-        }
+        } */
 
-        .technology {
+        /* .technology {
             font-size: var(--content-secondary);
-        }
+        } */
 
         .content-primary {
             font-size: var(--content-secondary);
